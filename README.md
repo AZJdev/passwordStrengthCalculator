@@ -3,7 +3,7 @@
 PasswordChkr is a small desktop application written in Java with JavaFX that evaluates password strength and can generate secure passwords. The project implements dictionary checks, entropy calculation, basic NIST-inspired validation rules, and a configurable password generator.
 
 ## Features
-- Password strength scoring and user feedback
+- Password strength scoring and user feedback 
 - Dictionary-based weak-password detection using `weak_passwords.txt`
 - Entropy calculation for provided passwords
 - Basic NIST-style validations (length, character classes, etc.)
