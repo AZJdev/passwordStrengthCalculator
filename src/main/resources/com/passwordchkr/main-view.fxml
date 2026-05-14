@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.passwordchkr.controller.MainController"
+      alignment="CENTER"
+      spacing="10"
+      prefWidth="500"
+      prefHeight="450">
+
+    <Label text="Kalkulator bezpieczeństwa haseł"/>
+
+    <HBox spacing="5" alignment="CENTER">
+
+        <PasswordField fx:id="passwordField"
+                       promptText="Wpisz hasło"/>
+
+        <TextField fx:id="visiblePasswordField"
+                   managed="false"
+                   visible="false"/>
+
+        <Button text="👁"
+                onAction="#togglePasswordVisibility"/>
+
+    </HBox>
+
+    <ProgressBar fx:id="strengthBar"
+                 prefWidth="300"/>
+
+    <Label fx:id="entropyLabel"/>
+
+    <Label fx:id="strengthLabel"/>
+
+    <TextArea fx:id="suggestionsArea"
+              prefHeight="150"/>
+    <Button text="Generuj bezpieczne hasło"
+            onAction="#generatePassword"/>
+
+</VBox>

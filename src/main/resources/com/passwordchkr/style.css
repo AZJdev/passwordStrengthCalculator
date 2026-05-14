@@ -1,0 +1,94 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom, #414345, #232526);
+    -fx-padding: 25;
+    -fx-font-family: "Montserrat";
+}
+
+.label {
+    -fx-text-fill: #e4e6eb;
+    -fx-font-size: 16px;
+}
+
+.label:first-child {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 0 0 15 0;
+}
+
+.text-field,
+.password-field,
+.text-area {
+    -fx-background-color: #2b2d36;
+    -fx-text-fill: #f1f1f1;
+    -fx-prompt-text-fill: #8d93a1;
+
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+
+    -fx-border-color: #3f4454;
+    -fx-border-width: 1.2;
+
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+}
+
+.text-field:focused,
+.password-field:focused,
+.text-area:focused {
+    -fx-border-color: #5c8dff;
+    -fx-effect: dropshadow(gaussian, rgba(92,141,255,0.35), 10, 0.2, 0, 0);
+}
+
+.text-area .content {
+    -fx-background-color: #2b2d36;
+    -fx-background-radius: 10;
+}
+
+.text-area {
+    -fx-control-inner-background: #2b2d36;
+}
+
+.button {
+    -fx-background-color: linear-gradient(to bottom, #4d7cff, #3f6df2);
+    -fx-text-fill: white;
+
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+
+    -fx-padding: 10 18 10 18;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #5c8dff, #4d7cff);
+}
+
+.button:pressed {
+    -fx-background-color: #3559c7;
+}
+
+.button:first-of-type {
+    -fx-font-size: 16px;
+    -fx-padding: 8 12 8 12;
+}
+
+.progress-bar {
+    -fx-pref-height: 14px;
+}
+
+.progress-bar > .track {
+    -fx-background-color: #2b2d36;
+    -fx-background-radius: 10;
+}
+
+.progress-bar > .bar {
+    -fx-background-radius: 10;
+}
+
+#suggestionsArea {
+    -fx-font-family: "Consolas";
+    -fx-font-size: 13px;
+}
